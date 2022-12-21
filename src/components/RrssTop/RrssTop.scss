@@ -1,0 +1,15 @@
+.topRedes{
+    text-align: end;
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    a img{
+        height: 30px;
+        width: 30px;
+    }
+    :hover{
+        height: 32px;
+        width: 32px;
+    }
+}
