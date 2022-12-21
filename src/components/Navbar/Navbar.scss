@@ -8,9 +8,10 @@
         color: white;
         font-size: 16px;
         font-weight:300;
-        
+        transition: 0.3s;
     }
     :hover{
+        font-size: 17px;
         color: white;
         text-shadow: 0 0 0.2em #ffffff70, 0 0 0.2em #ffffff83;
         border-bottom: white solid 1px ;
