@@ -1,0 +1,710 @@
+$desktopmax:1850px;
+$desktopmed:1261px;
+$desktopmin:1200px;
+$tabletmax:931px;
+$tabletmed:845px;
+$phone1:580px;
+
+// Color
+$black: #262528;
+$white: #ffffff;
+$text-dark: #39383F;
+$text-hover: #7e7d86;
+$text-sure: #ffffff;
+$cian: #FF40BB;
+$green: #50e217;
+$magenta: #FF40BB;
+$grey: #E2E2E2;
+$botones: #f0f0f0;
+
+//Fuentes
+$font-main: 'Poppins', sans-serif;
+$font-secondary: 'Arima', cursive;
+
+// Generales
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 7rem;
+}
+.title{
+    display: grid;
+    grid-template-areas: 
+    "p" "titleh2";
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 150px;
+    align-content: center;
+    max-width: 100%;
+    .p{
+        align-content: center;
+        display: grid;
+        position: absolute;
+        font-size: 140px;
+        color: #00000033;
+        font-weight: 800;
+        width: 85%;
+        p{
+            text-align: center;
+        }
+    }
+    .titleh2{
+        text-align: center;
+        position: relative;
+        font-size: 50px;
+        color: white;
+        font-weight: 400;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.63);
+    }
+}
+img{
+    vertical-align: top;
+    max-width: 100%;
+}
+.titulo-seccion{
+    h2{
+        font-size: 3.5rem;
+        font-family: $font-main;
+        margin-bottom: 1.125rem;
+        letter-spacing: -0.02em;
+    }
+    p{
+        font-size: 1.25rem;
+        color: $black;
+    }
+}
+.imagen-modal{
+    max-width: 95%;
+    max-height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity .6s ease;
+    -o-transition: opacity .6s ease;
+    transition: opacity .6s ease;
+    z-index: 0;
+}
+.ItemListContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    grid-template-areas: "banners";
+    /*Banners*/
+    .banners{
+        grid-area: banners;
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: auto auto 20% 20%;
+        grid-template-rows: repeat(5, 1fr);
+        margin-bottom: 200px;
+        grid-gap: 70px;
+        grid-template-areas: 
+        "tituloB tituloB textBanners textBanners"
+        "tituloB tituloB imagenBanners imagenBanners"
+        "iconoB1 iconoB2 imagenBanners imagenBanners"
+        "tituloB1 tituloB1 imagenBanners imagenBanners"
+        "tituloB1 tituloB1 imagenBanners imagenBanners";
+        .tituloB{
+            grid-area: tituloB;
+            display: grid;
+            align-content: center;
+            h2{
+                font-size: 8rem;
+                color: white;
+            }
+            h1{
+                font-size: 1.8rem;
+                color: $magenta;
+                font-weight: 400;
+                text-shadow: rgba(255, 0, 221, 0.719) 0px 0px 30px;
+            }
+        }
+        .textBanners{
+            grid-area: textBanners;
+            display: grid;
+            grid-template-areas: 
+                "tist3"
+                "text3";
+            grid-template-rows: auto auto;
+            align-content: end;
+            .tist3{
+                display: flex;
+                align-items: center;
+                margin-bottom:20px;
+                .icono{
+                    margin-right: 1rem;
+                    color: white;
+                }
+                h3{
+                    font-size: 1.5rem;
+                    line-height: 1.7rem;
+                    color: white;
+                }
+            }
+            .text3{
+                grid-area: text3;
+                text-align: justify;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 15px;
+                color: $text-hover;
+            }
+        }
+        .imagenBanners{
+            grid-area: imagenBanners;
+            padding: 50px;
+            grid-template-rows: auto auto;
+            grid-template-columns: repeat(2, 1fr);
+            border-radius: 120px;
+            display: grid;
+            background:#39383F;
+            z-index: -100; 
+            box-shadow: 0px 10px 10px -6px black;
+            grid-gap: 25px;
+            grid-template-areas:  
+                "cuadroImg img3"
+                "img2 img3";
+                .img { 
+                    grid-area: cuadroImg;
+                    img{
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+                .img2 { 
+                    grid-area: img2;
+                    display: grid;
+                    align-content: end;
+                    img{
+                        border-radius: 75px;
+                        box-shadow: 0px 10px 10px -6px black;
+                    }
+                }
+                .img3 { 
+                    grid-area: img3;
+                    display: grid;
+                    align-content: end;
+                    img{
+                        border-radius: 75px;
+                        box-shadow: 0px 10px 10px -6px black;
+                    }
+                }
+        }
+        .iconoB1{
+            grid-area: iconoB1;
+            display: grid;
+            grid-template-areas: 
+                "tist1"
+                "text1";
+            grid-template-rows: auto auto;
+            align-content: center;
+            .tist1{
+                display: flex;
+                align-items: center;
+                margin-bottom:20px;
+                .icono{
+                    margin-right: 1rem;
+                    color: white;
+                }
+                h3{
+                    font-size: 1.2rem;
+                    line-height: 1.7rem;
+                    color: white;
+                }
+            }
+            .text1{
+                grid-area: text1;
+                text-align: justify;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 15px;
+                color: $text-hover;
+            }
+        }
+        .iconoB2{
+            grid-area: iconoB1;
+            display: grid;
+            grid-template-areas: 
+                "tist2"
+                "text2";
+            grid-template-rows: auto auto;
+            align-content: center;
+            .tist2{
+                display: flex;
+                align-items: center;
+                margin-bottom:20px;
+                .icono{
+                    margin-right: 1rem;
+                    color: white;
+                }
+                h3{
+                    font-size: 1.2rem;
+                    line-height: 1.7rem;
+                    color: white;
+                }
+            }
+            .text2{
+                grid-area: text2;
+                text-align: justify;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 15px;
+                color: $text-hover;
+            }
+        }
+        .tituloB1{
+            grid-area: tituloB1;
+            .titB1{
+                h2{
+                    font-size: 30px;
+                    color: $cian;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    font-weight: 400;
+                    text-shadow: rgba(255, 0, 221, 0.719) 0px 0px 30px;
+                }
+                p{
+                    text-align: justify;
+                    color: white;
+                    font-size: 13px;
+                }
+            }
+            .button{
+                text-align: center;
+                font-size: 1.2rem;
+                border-radius: 20px;
+                border: 2px solid $green;
+                cursor: pointer;
+                display: block;
+                margin: 0 auto;
+                margin-top: 3rem;
+                padding: 0.94rem;
+                width: 30%;
+                outline: none;
+                -webkit-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+                text-shadow: rgba(91, 255, 50, 0.719) 0px 0px 30px;
+                a{
+                    color: $green;
+                }
+                &:hover{
+                    background: $green;
+                    a{
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .iconoB2{grid-area: iconoB2;}
+        .espacioB{
+            grid-area: espacioB;
+            background: $black;}
+    }/* Fin Banners*/
+}
+
+/*------------------------------------------------*/
+/*Media Queris*/
+/*------------------------------------------------*/
+@media all and (max-width:$desktopmax){
+    .ItemListContainer{
+        .title{
+            min-height: 125px;
+            .p{
+                font-size:110px;
+            }
+            .titleh2{
+                font-size: 40px;
+            }
+        }
+        .portadaGrid{
+            grid-template-rows: 23rem 23rem;
+        }
+    }
+}
+
+@media all and ( max-width: 1835px ){
+    .ItemListContainer{
+        grid-template-columns: 90%;
+        .banners{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-column-gap: 60px;
+            grid-template-areas: 
+            "tituloB imagenBanners"
+            "textBanners imagenBanners"
+            "iconoB1 imagenBanners"
+            "iconoB2 imagenBanners"
+            "tituloB1 tituloB1"
+        }
+        .contacto{
+            .contactBadeja{
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width:1680px){
+    .ItemListContainer{
+        .banners{
+            grid-template-columns: auto 50%;
+            grid-template-rows: auto;
+            grid-column-gap: 60px;
+            grid-template-areas: 
+            "tituloB imagenBanners"
+            "textBanners imagenBanners"
+            "iconoB1 imagenBanners"
+            "iconoB2 imagenBanners"
+            "tituloB1 tituloB1"
+        }
+    }
+    .sliderStudio{
+        .textSlider{
+            .titleSlider{
+                .pfondo{ font-size: 66px;}
+                .titleh2{margin-top: -53px;font-size: 24px;}
+            }
+        }
+    }
+}
+
+@media all and (max-width:1580px){
+    .ItemListContainer{
+        .banners{
+            grid-template-columns: auto 50%;
+            grid-template-rows: auto;
+            grid-column-gap: 50px;
+            grid-template-areas: 
+            "tituloB imagenBanners"
+            "textBanners imagenBanners"
+            "iconoB1 imagenBanners"
+            "iconoB2 tituloB1";
+            .iconoB2{
+                align-content: start;
+            }
+        }
+        .title .p{
+            font-size: 90px;
+            width: 90%
+        }
+    }
+    .sliderStudio{
+        grid-template-columns: 65% 35%;
+        .textSlider{
+            .titleSlider {
+                .pfondo{
+                font-size: 54px;
+                }
+                .titleh2{
+                    margin-top: -44px;
+                    font-size: 22px;
+                }
+            }
+            .buttonW {
+                width: 50%;
+            }
+        } 
+    }
+}
+@media all and (max-width:1333px){
+    .ItemListContainer{
+        .banners{
+            grid-template-rows: 130px;
+            margin-top: 162px;
+            margin-bottom: 90px;
+            .tituloB h1{
+                font-size: 1.2rem;
+            }
+            .textBanners .tist3 h3{
+                font-size: 1.1rem;
+            }
+            .tituloB1{
+                .titB1 h2{
+                font-size: 22px;
+                }
+                .button{
+                    font-size: 1rem;
+                    width: 50%;
+                    margin-top: 2rem;
+                }
+            } 
+        }
+        .title{
+            min-height: 74px;
+            .p{
+            font-size: 60px;
+            }
+            .titleh2{
+                font-size: 30px;
+            }
+        } 
+    }
+    .sliderStudio{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "bodyslider" 
+            "textSlider";
+            .textSlider{
+                margin-top: 30px;
+                .pSlider{
+                    margin-bottom: 40px;
+                }
+            }
+    }
+    .portadaGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 15px;
+        margin-bottom: 50px;
+        grid-template-areas:
+            "fotoIzqLightbox textoGrid"
+            "fotoDerFull fotoDerFull"
+            "textoGrid1 fotoDerLightbox"
+            "fotoIzqFull fotoIzqFull";
+            .fotoIzqLightbox{
+                height: 350px;
+            }
+    }
+    .ItemListContainer .contacto .contactBadeja {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "datos" "formulario";
+    }
+    .ItemListContainer .contacto .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        grid-gap: 15px;
+        margin-bottom: 30px;
+        .blurb{ 
+            h3{
+                font-size: 18px;
+                margin-bottom: 3px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media all and (max-width:1120px){
+    .ItemListContainer{
+        .banners{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-column-gap: 20px;
+            grid-template-areas: 
+            "tituloB imagenBanners"
+            "textBanners textBanners"
+            "iconoB1 iconoB1"
+            "iconoB2 iconoB2"
+            "tituloB1 tituloB1";
+            .tituloB h2{
+                font-size: 5rem;
+            }
+            .tituloB{
+                align-content: start;
+                margin-top: 75px;
+            }
+            .imagenBanners{
+                height: 470px;
+                width: 500px;
+                border-radius: 100px;
+                .img3 img{
+                    border-radius: 45px;
+                }
+                .img2 img{
+                    border-radius: 45px;
+                }
+            }
+        }
+        .portadaGrid{
+            margin-bottom: 50px;
+        }
+        .portadaGrid {
+            .fotoIzqFull{
+                display: none;
+            }
+            .fotoDerLightbox{
+                display: none;
+            }
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "fotoIzqLightbox textoGrid"
+                "textoGrid1 fotoDerFull";
+                .fotoIzqLightbox{
+                    height: 350px;
+                }
+        }
+    }
+}
+@media all and (max-width:$tabletmax){
+    header{
+        .menu-bar-pc{
+            display: none;
+        }
+        .menu-bar-movil{
+            display: flex;
+        }
+    }
+    .ItemListContainer{
+        .banners{
+            margin-top: 100px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-column-gap: 15px;
+            grid-template-areas: 
+            "tituloB"
+            "imagenBanners"
+            "textBanners"
+            "iconoB1"
+            "iconoB2"
+            "tituloB1";
+            .tituloB{ 
+                h1{
+                    text-align: end;
+                    font-size: 1.4rem;
+                }
+                h2{text-align: end;}
+            }
+            .iconoB2{
+                .tist2{
+                    justify-content: flex-end;
+                }
+            }
+            .iconoB1{
+                .tist1{
+                    justify-content: flex-end;
+                }
+            }
+            .textBanners{
+                .tist3{
+                    justify-content: flex-end;
+                }
+            }
+        }
+        .imagenBanners{
+            justify-content: end;
+        }
+        .ItemListContainer .contacto .container {
+            .blurb{ 
+                h3{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .title{
+        margin-top: 0px;
+    }
+    .sliderStudio{
+        margin-bottom: 50px;
+        .textSlider .buttonW{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media all and (max-width:$tabletmed){
+    .ItemListContainer{
+        .portadaGrid .fotoIzqFull{
+            display: none;
+        }
+        .contacto .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "blurb1 blurb3" "blurb2 blurb2";
+            .blurb1{grid-area: blurb1;}
+            .blurb2{grid-area: blurb2; margin-bottom: 20px;}
+            .blurb3{grid-area: blurb3;}
+        }
+        .contacto .container .blurb {
+            justify-content: center;
+            align-self: center;
+            width: 100%;
+            img{
+                width: 60px;
+                height: auto;
+                max-width: 46px;
+                padding-right: 7px;
+            }
+            .tett{
+                text-align: center;
+                padding-left: 10px;
+                border-left: #39383F solid 1px;
+            }
+        }
+        .banners{
+            .imagenBanners{
+                height: auto;
+                width: 100%;
+                border-radius: 50px;
+                padding: 30px;
+            }
+        }
+        .title{
+            min-height: 10px;
+            .p {
+            font-size: 32px;
+            }
+            .titleh2 {
+                font-size: 19px;
+            }
+        }
+    }
+    .ItemListContainer .portadaGrid {
+        .fotoIzqFull{
+            display: none;
+        }
+        .fotoDerLightbox{
+            display: none;
+        }
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "fotoIzqLightbox"
+            "textoGrid"
+            "fotoDerFull"
+            "textoGrid1";
+            .fotoIzqLightbox{
+                height: 350px;
+            }
+    }
+}
+@media all and (max-width:$phone1){
+    .ItemListContainer{
+        .banners{
+            .imagenBanners{
+                height: auto;
+                width: 100%;
+                border-radius: 50px;
+                .img3 img{
+                    border-radius: 35px;
+                }
+                .img2 img{
+                    border-radius: 35px;
+                }
+            }
+        }
+        .contacto .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "blurb1" "blurb3" "blurb2";
+        }
+    }
+    .title {
+        margin-bottom: 16px;
+    }
+}

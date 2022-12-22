@@ -1,5 +1,7 @@
 .pageHeader{
     display: grid;
+    position: fixed;
+    width: 100%;
     padding: 10px 50px;
     justify-content: space-between;
     grid-template-columns: 20% 65% 15%;
