@@ -11,12 +11,15 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    grid-gap: 10px;
     .copyRinght{
         grid-area: copyRinght ;
         display: flex;
         color: grey;
         font-size: 12px;
         justify-content: center;
+        padding: 20px 0 0 0;
+        border-top: rgba(128, 128, 128, 0.281) solid 1px;
         a{
             padding: 0 5px;
             color: white;
