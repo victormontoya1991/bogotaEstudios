@@ -1,4 +1,6 @@
 import './ContainerBanner.scss';
+/*Llamado de componentes*/
+import { ButtonWhatsapp } from '../ButtonWhatsapp/ButtonWhatsapp';
 /*Llamado de imagenes*/
 import banner1 from '../../assets/img/2465-[Convertido].png';
 import banner2 from '../../assets/img/sed.png'
@@ -49,9 +51,7 @@ export const ContainerBanners = () => {
 					<p>Comunícate con nosotros, tenemos los espacios adecuados para la construcción o uso en todas tus grabaciones o producciones. Nos adecuamos a tus necesidades y presupuestos, acompañamos con nuestro equipo de profesionales en cada uno de los pasos de tu producción.
 					Escribenos & conversa con nosotros, seguro tenemos una solución adecuada para ti. </p>
 				</div>
-				<div class="button">
-                    <a href="https://api.whatsapp.com/send?phone=+573224164520&text=Hola,%20como%20estas%20estoy%20interesado%20en%20los%20servicios%20de%20estudio%20fotografico."> <i class="fa fa-whatsapp"></i> Whatsapp</a>
-                </div>
+				<ButtonWhatsapp />
 			</div>
 		</section>
     )

@@ -1,0 +1,35 @@
+// Color
+$black: #262528;
+$green: #50e217;
+
+.button{
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid $green;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 0.94rem;
+    width: 30%;
+    outline: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    text-shadow: rgba(91, 255, 50, 0.719) 0px 0px 30px;
+    img{
+        height: 25px;
+        width: 25px;
+    }
+    a{
+        color: $green;
+        text-decoration: none;
+    }
+    &:hover{
+        background: $green;
+        a{
+            color: $black;
+        }
+    }
+}
