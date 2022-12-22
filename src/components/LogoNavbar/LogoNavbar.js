@@ -6,8 +6,8 @@ import iconBrand from '../../assets/img/Bogota-estudios-icon.png';
 export const LogoNavbar = () => {
     return(
         <div className="logoBrand" >
-                <img className='logo' alt="Logo" src= { logoBrand }/> 
-                <img className='icon' alt="Icon Logo" src= {iconBrand} />
+            <img className='logo' alt="Logo" src= { logoBrand }/> 
+            <img className='icon' alt="Icon Logo" src= {iconBrand} />
         </div>
     )
 }

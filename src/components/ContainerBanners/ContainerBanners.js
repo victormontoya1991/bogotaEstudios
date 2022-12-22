@@ -1,4 +1,8 @@
 import './ContainerBanner.scss';
+/*Llamado de imagenes*/
+import banner1 from '../../assets/img/2465-[Convertido].png';
+import banner2 from '../../assets/img/sed.png'
+import banner3 from '../../assets/img/DSC01818.jpg'
 
 export const ContainerBanners = () => {
     return(
@@ -29,9 +33,15 @@ export const ContainerBanners = () => {
 				<p class="text3">Contamos con los espacios ideales para que generes contenidos en redes sociales de tu cuenta como creador o marca. Genera la variedad que necesitas para tu cuenta con diferentes ambientes en cada uno de nuestros escenarios.</p>
 			</div>
 			<div class="imagenBanners">
-				{/* {<div class="img" ><img src="/img/2465-[Convertido].png" alt=""></div>
-				<div class="img2"><img src="/img/sed.png" alt=""></div>
-				<div class="img3"><img src="/img/DSC01818.jpg" alt=""></div> */}
+				<div className="img" >
+                    <img alt="Bogota Estudios" src= { banner1 }/> 
+                </div>
+                <div className="img2" >
+                    <img alt="Bogota Estudios" src= { banner2 }/> 
+                </div>
+                <div className="img3" >
+                    <img alt="Bogota Estudios" src= { banner3 }/> 
+                </div>
 			</div> 
 			<div class="tituloB1">
 				<div class="titB1">
