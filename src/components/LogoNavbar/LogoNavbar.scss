@@ -1,0 +1,22 @@
+.logoBrand{
+    display: flex;
+    .icon{
+        display: none;
+    }
+    img{
+        min-width: 190px;
+        max-width: 200px;
+    }
+}
+@media screen and (max-width: 1090px){
+    .logoBrand{
+        .logo{
+            display: none;
+        }
+        .icon{
+            display: flex;
+            min-width: 60px;
+            max-width: 70px;
+        }
+    }
+}
