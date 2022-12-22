@@ -1,0 +1,53 @@
+.pageFooter{
+    display: grid;
+    padding: 30px 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "navFooter topRedes"
+        "copyRinght copyRinght"
+    ;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    .copyRinght{
+        grid-area: copyRinght ;
+        display: flex;
+        color: grey;
+        font-size: 12px;
+        justify-content: center;
+        a{
+            padding: 0 5px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        :hover{
+            color: grey;
+        }
+    }
+}
+@media screen and (max-width: 990px){
+    .pageFooter{
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "navFooter" 
+        "topRedes"
+        "copyRinght";
+        .topRedes{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            a img{
+                height: 25px;
+                width: 25px;
+                transition: 0.3s;
+            }
+            :hover{
+                height: 27px;
+                width: 27px;
+            }
+        }
+    }
+}

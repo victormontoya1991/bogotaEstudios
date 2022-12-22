@@ -6,7 +6,7 @@ import iconWhatsapp from '../../assets/icon/icono_whatsapp.svg';
 
 export const RrssTop = () => {
     return (
-        <div class="topRedes">
+        <div className="topRedes">
             <a href="https://www.facebook.com/bogota.estudios01">
                 <img alt="Logo" src= {iconfacebook}/>
             </a>

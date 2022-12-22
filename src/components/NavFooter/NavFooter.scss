@@ -1,0 +1,24 @@
+.navFooter{
+    display: flex;
+    grid-gap: 20px;
+    a{
+        text-decoration: none;
+        font-family: Poppins;
+        color: rgb(204, 204, 204);
+        font-size: 14px;
+        font-weight:300;
+        transition: 0.3s;
+    }
+    :hover{
+        font-size: 15px;
+        color: white;
+        text-shadow: 0 0 0.2em #ffffff70, 0 0 0.2em #ffffff83;
+    }
+}
+@media screen and (max-width: 990px){
+    .navFooter{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
