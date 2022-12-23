@@ -1,0 +1,92 @@
+// Color
+$black: #262528;
+$white: #ffffff;
+$text-dark: #39383F;
+$text-hover: #7e7d86;
+$text-sure: #ffffff;
+$cian: #FF40BB;
+$green: #50e217;
+$magenta: #FF40BB;
+$grey: #E2E2E2;
+
+.FormContact{
+    max-width: 140.7rem;
+    margin: 0 auto;
+    width: 100%;
+    .input-group{
+        position: relative;
+        margin-bottom: 2.3rem;
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea{
+            font-size: 1rem;
+            color: white;
+            width: 100%;
+            border-radius: 15px;
+            outline: none;
+            padding: 0.8rem 1rem;
+            background: none;
+            border: 1px solid grey;
+            vertical-align: top;
+            &:focus{
+                border: 1px solid $cian;
+            }
+        }
+        textarea{
+            max-width: 100%;
+            max-height: 10.25rem;
+            min-height: 5.12rem;
+            min-width: 100%;
+        }
+        label{
+            color: $text-hover;
+            &.label{
+                position: absolute;
+                top: 1rem;
+                left: 0;
+                font-size: 1rem;
+                line-height: 1rem;
+                margin-left: 1rem;
+                -webkit-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+                &.active{
+                    top:-15px;
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    font-size: 0.7rem;
+                    line-height: 0.75rem;
+                    color: $cian;
+                }
+            }
+        }
+        .error{
+            position: absolute;
+            color: #808080;
+            font-size: 0.8rem;
+        }
+    }
+    button[type="submit"]{
+        background: $magenta;
+        font-size: 1rem;
+        color: $white;
+        border-radius: 20px;
+        border: 2px solid $magenta;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 0.94rem;
+        width: 30%;
+        outline: none;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        &:hover{
+            background: #ffffff00;
+            color: $magenta;
+        }
+    }
+    
+}
