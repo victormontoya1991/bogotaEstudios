@@ -1,4 +1,4 @@
-import './InfoContact.sass';
+import './InfoContact.scss';
 
 export const InfoContact = () => {
     return(
