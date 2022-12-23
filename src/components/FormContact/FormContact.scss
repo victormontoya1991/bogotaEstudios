@@ -8,9 +8,11 @@ $cian: #FF40BB;
 $green: #50e217;
 $magenta: #FF40BB;
 $grey: #E2E2E2;
+//Fuentes
+$Fuente1: Poppins;
 
 .FormContact{
-    max-width: 140.7rem;
+    max-width: 40.7rem;
     margin: 0 auto;
     width: 100%;
     .input-group{
@@ -29,18 +31,18 @@ $grey: #E2E2E2;
             background: none;
             border: 1px solid grey;
             vertical-align: top;
-            &:focus{
-                border: 1px solid $cian;
-            }
-        }
-        textarea{
+            font-family: $Fuente1;
             max-width: 100%;
             max-height: 10.25rem;
             min-height: 5.12rem;
             min-width: 100%;
+            &:focus{
+                border: 1px solid $cian;
+            }
         }
         label{
             color: $text-hover;
+            font-family: $Fuente1;
             &.label{
                 position: absolute;
                 top: 1rem;
@@ -68,6 +70,7 @@ $grey: #E2E2E2;
         }
     }
     button[type="submit"]{
+        font-family: $Fuente1;
         background: $magenta;
         font-size: 1rem;
         color: $white;
