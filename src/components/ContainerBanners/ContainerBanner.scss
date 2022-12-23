@@ -334,7 +334,7 @@ img{
 
 @media all and ( max-width: 1835px ){
     .ItemListContainer{
-        grid-template-columns: 90%;
+        grid-template-columns: 100%;
         .banners{
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto;
